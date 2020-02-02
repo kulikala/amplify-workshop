@@ -1,0 +1,25 @@
+type Message
+  @model(
+    subscriptions: {
+      level: public
+    }
+  )
+  @auth(
+    rules: [
+      { allow: owner, ownerField: "userName", operations: [create, update, delete, read] },
+      { allow: private, operations: [read] }
+    ]
+  )
+  @key(
+    name: "SortByCreatedAt"
+    fields: ["chatRoom", "createdAt"]
+    queryField: "listMessagesSortedByCreatedAt"
+  )
+{
+  id: ID!
+  chatRoom: String!
+  userName: String!
+  content: String!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
