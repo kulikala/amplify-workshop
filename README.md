@@ -1,6 +1,6 @@
 # amplify-workshop
 
-> AWS Amplify Workshop with Vue.js
+> Sample app based on AWS Amplify Workshop with Vue.js
 
 This is a sample application built with AWS Amplify,
 and you can `amplify init --app` with this repository

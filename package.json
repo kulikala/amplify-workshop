@@ -1,7 +1,7 @@
 {
   "name": "amplify-workshop",
   "version": "1.0.0",
-  "description": "AWS Amplify Workshop with Vue.js",
+  "description": "Sample app based on AWS Amplify Workshop with Vue.js",
   "author": "Kaz Namba <kaz.namba@gmail.com>",
   "private": true,
   "scripts": {
